@@ -15,24 +15,16 @@ using System.Windows.Shapes;
 
 namespace MenuChooser
 {
-    class MenuItem
+    public partial class MainWindow : Window
     {
-        public Random Randomizer = new Random();
-        public string[] Proteins = { "Roast beef", "Salami", "Turkey", "Ham", "Pastrami", "Tofu" };
-        public string[] Condiments = { "yellow mustard", "brown mustard", "honey mustard", "mayo", "relish", "french dressing" };
-        public string[] Bread = { "rye", "white", "wheat", "pumppernickel", "a roll" };
-        public string Description = "";
-        public string Price;
-        public void Generate()
+        public MainWindow()
         {
-            string randomProtein = Proteins[Randomizer.Next(Proteins.Length)];
-            string randomCondiment = Condiments[Randomizer.Next(Condiments.Length)];
-            string randomBread = Bread[Randomizer.Next(Bread.Length)];
-            Description = randomProtein + " with "+randomCondiment + " on "+randomBread;
-            decimal bucks = Randomizer.Next(2, 5);
-            decimal cents = Randomizer.Next(1, 98);
-            decimal price = bucks + (cents * .01M);
-            Price = price.ToString("c");
+            InitializeComponent();
+            MakeTheMenu();
+        }
+        private void MakeTheMenu()
+        {
+            throw new NotImplementedException();
         }
     }
 }
