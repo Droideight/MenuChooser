@@ -21,6 +21,18 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-
+        <TextBlock x:Name="item1" FontSize="18px" Grid.Row="0"/>
+        <TextBlock x:Name="price1" FontSize="18px" HorizontalAlignment="Right" Grid.Column="1" Grid.Row="0"/>
+        <TextBlock x:Name="item2" FontSize="18px" Grid.Row="1"/>
+        <TextBlock x:Name="price2" FontSize="18px" HorizontalAlignment="Right" Grid.Column="1" Grid.Row="1"/>
+        <TextBlock x:Name="item3" FontSize="18px" Grid.Row="2"/>
+        <TextBlock x:Name="price3" FontSize="18px" HorizontalAlignment="Right" Grid.Column="1" Grid.Row="2"/>
+        <TextBlock x:Name="item4" FontSize="18px" Grid.Row="3"/>
+        <TextBlock x:Name="price4" FontSize="18px" HorizontalAlignment="Right" Grid.Column="1" Grid.Row="3"/>
+        <TextBlock x:Name="item5" FontSize="18px" Grid.Row="4"/>
+        <TextBlock x:Name="price5" FontSize="18px" HorizontalAlignment="Right" Grid.Column="1" Grid.Row="4"/>
+        <TextBlock x:Name="item6" FontSize="18px" Grid.Row="5"/>
+        <TextBlock x:Name="price6" FontSize="18px" HorizontalAlignment="Right" Grid.Column="1" Grid.Row="5"/>
+        <TextBlock x:Name="guacamole" FontSize="18px" FontStyle="Italic" Grid.Row="6" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
     </Grid>
 </Window>
